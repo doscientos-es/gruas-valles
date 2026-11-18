@@ -15,21 +15,24 @@
       "nombre": "Marc Gelabert",
       "slug": "marc-gelabert",
       "telefono": "669 296 949",
-      "email": "marc@gruasdelvalles.com"
+      "email": "marc@gruasdelvalles.com",
+      "foto": "Marc.jpg"
     },
     {
       "area": "Logística",
       "nombre": "Hector Alzate",
       "slug": "hector-alzate",
       "telefono": "669 296 955",
-      "email": "logistica@gruasdelvalles.com"
+      "email": "logistica@gruasdelvalles.com",
+      "foto": "Hector.jpg"
     },
     {
       "area": "Director técnico",
       "nombre": "Manel Moya",
       "slug": "manel-moya",
       "telefono": "601 191 042",
-      "email": "mmoya@gruasdelvalles.com"
+      "email": "mmoya@gruasdelvalles.com",
+      "foto": "Manel.jpg"
     },
     {
       "area": "Encargado general",
@@ -43,35 +46,40 @@
       "nombre": "Xavier Peral",
       "slug": "xavier-peral",
       "telefono": "669 296 939",
-      "email": "comercial@gruasdelvalles.com"
+      "email": "comercial@gruasdelvalles.com",
+      "foto": "Xavi_Peral.jpg"
     },
     {
       "area": "Técnico comercial",
       "nombre": "Joan Gubau",
       "slug": "joan-gubau",
       "telefono": "669 296 950",
-      "email": "maresme@gruasdelvalles.com"
+      "email": "maresme@gruasdelvalles.com",
+      "foto": "Joan_G.jpg"
     },
     {
       "area": "PRL",
       "nombre": "Daniel Cambrón",
       "slug": "daniel-cambron",
       "telefono": "938 497 022",
-      "email": "prl@gruasdelvalles.com"
+      "email": "prl@gruasdelvalles.com",
+      "foto": "Dani_Cambron.jpg"
     },
     {
       "area": "Contabilidad",
       "nombre": "Rosario Lozano",
       "slug": "rosario-lozano",
       "telefono": "938 497 132",
-      "email": "contabilidad@gruasdelvalles.com"
+      "email": "contabilidad@gruasdelvalles.com",
+      "foto": "Roser.jpg"
     },
     {
       "area": "Administración",
       "nombre": "Susana Sánchez",
       "slug": "susana-sanchez",
       "telefono": "938 497 132",
-      "email": "administración@gruasdelvalles.com"
+      "email": "administración@gruasdelvalles.com",
+      "foto": "Susana.jpeg"
     }
   ],
   "web": "https://www.gruasdelvalles.com",

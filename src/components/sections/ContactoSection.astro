@@ -9,6 +9,11 @@ import { homeCopy } from "@i18n/home";
 
 const lang = getLangFromUrl(Astro.url);
 const copy = homeCopy(lang);
+
+const fotos = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/images/equipo/*.{jpg,jpeg,png}",
+  { eager: true }
+);
 ---
 
 <section id="contacto" class="section-padding bg-surface-alt">
@@ -82,7 +87,7 @@ const copy = homeCopy(lang);
           <article class="flex min-h-28 overflow-hidden bg-surface">
             <div class="w-24 shrink-0 bg-surface-alt sm:w-28">
               <img
-                src={persona.foto ? resolveImage(persona.foto) : "/images/equipo-placeholder.svg"}
+                src={persona.foto ? fotos[`/src/assets/images/equipo/${persona.foto}`]?.default.src ?? "/images/equipo-placeholder.svg" : "/images/equipo-placeholder.svg"}
                 alt=""
                 class="h-full min-h-28 w-full object-cover"
                 loading="lazy"
