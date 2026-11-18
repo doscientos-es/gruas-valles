@@ -2,6 +2,9 @@
 import { Font } from "astro:assets";
 import Button from "../components/ui/Button.astro";
 import "../styles/global.css";
+import Base from "@layouts/Base.astro";
+import Footer from "../components/ui/Footer.astro";
+import Navbar from "../components/ui/Navbar.astro";
 
 const versions = [
   {
@@ -55,41 +58,8 @@ const versions = [
 ];
 ---
 
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, follow" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Página no encontrada (404) | Grúas del Vallès</title>
-    <Font cssVariable="--font-jakarta" preload />
-  </head>
-  <body>
-    <header class="border-b border-muted/40 bg-white">
-      <div
-        class="container-wide flex flex-wrap items-center justify-between gap-4 py-3"
-      >
-        <img src="/logo.png" alt="Grúas del Vallès" class="h-12 w-auto" />
-        <nav aria-label="Idioma / Language" data-404-languages hidden>
-          <div class="flex flex-wrap gap-2">
-            {
-              versions.map((version) => (
-                <button
-                  type="button"
-                  lang={version.lang}
-                  data-404-choice={version.lang}
-                  aria-pressed="false"
-                  class="min-h-11 rounded-sm border border-muted px-3 text-sm font-semibold text-ink-secondary aria-pressed:border-accent aria-pressed:text-accent"
-                >
-                  {version.name}
-                </button>
-              ))
-            }
-          </div>
-        </nav>
-      </div>
-    </header>
+<Base>
+    <Navbar/>
     <main id="main" class="bg-surface-alt">
       {
         versions.map((version) => (
@@ -155,4 +125,5 @@ const versions = [
     </main>
     <script src="../scripts/not-found.ts"></script>
   </body>
-</html>
+  <Footer/>
+</Base>
