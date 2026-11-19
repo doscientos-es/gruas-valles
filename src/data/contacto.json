@@ -16,7 +16,7 @@
       "slug": "marc-gelabert",
       "telefono": "669 296 949",
       "email": "marc@gruasdelvalles.com",
-      "foto": "Marc.jpg"
+      "foto": "Marc.avif"
     },
     {
       "area": "Logística",
@@ -24,7 +24,7 @@
       "slug": "hector-alzate",
       "telefono": "669 296 955",
       "email": "logistica@gruasdelvalles.com",
-      "foto": "Hector.jpg"
+      "foto": "Hector.avif"
     },
     {
       "area": "Director técnico",
@@ -32,14 +32,15 @@
       "slug": "manel-moya",
       "telefono": "601 191 042",
       "email": "mmoya@gruasdelvalles.com",
-      "foto": "Manel.jpg"
+      "foto": "Manel.avif"
     },
     {
       "area": "Encargado general",
       "nombre": "Cayetano León",
       "slug": "cayetano-leon",
       "telefono": "669 296 954",
-      "email": "cayetano@gruasdelvalles.com"
+      "email": "cayetano@gruasdelvalles.com",
+      "foto": "Marc.avif"
     },
     {
       "area": "Técnico comercial",
@@ -47,7 +48,7 @@
       "slug": "xavier-peral",
       "telefono": "669 296 939",
       "email": "comercial@gruasdelvalles.com",
-      "foto": "Xavi_Peral.jpg"
+      "foto": "Xavi_Peral.avif"
     },
     {
       "area": "Técnico comercial",
@@ -55,7 +56,7 @@
       "slug": "joan-gubau",
       "telefono": "669 296 950",
       "email": "maresme@gruasdelvalles.com",
-      "foto": "Joan_G.jpg"
+      "foto": "Joan_G.avif"
     },
     {
       "area": "PRL",
@@ -63,7 +64,7 @@
       "slug": "daniel-cambron",
       "telefono": "938 497 022",
       "email": "prl@gruasdelvalles.com",
-      "foto": "Dani_Cambron.jpg"
+      "foto": "Dani_Cambron.avif"
     },
     {
       "area": "Contabilidad",
@@ -71,7 +72,7 @@
       "slug": "rosario-lozano",
       "telefono": "938 497 132",
       "email": "contabilidad@gruasdelvalles.com",
-      "foto": "Roser.jpg"
+      "foto": "Roser.avif"
     },
     {
       "area": "Administración",
@@ -79,7 +80,7 @@
       "slug": "susana-sanchez",
       "telefono": "938 497 132",
       "email": "administración@gruasdelvalles.com",
-      "foto": "Susana.jpeg"
+      "foto": "Susana.avif"
     }
   ],
   "web": "https://www.gruasdelvalles.com",

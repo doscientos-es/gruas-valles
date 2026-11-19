@@ -6,14 +6,26 @@ import { catalogo } from "../../lib/docs";
 import { resolveImage } from "../../lib/images";
 import { getLangFromUrl } from "@i18n/utils";
 import { homeCopy } from "@i18n/home";
+import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
 const copy = homeCopy(lang);
 
 const fotos = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/images/equipo/*.{jpg,jpeg,png}",
-  { eager: true }
+  "/src/assets/images/equipo/**/*.avif",
 );
+
+const miembros= equipo.map((p) =>{
+  const ruta = `/src/assets/images/equipo/${p.foto}`
+  const cargarImage = fotos[ruta]
+
+  if(!cargarImage){
+    throw new Error(`No se ha enconrtado la imagen: ${ruta}`)
+  }
+
+  return {...p, cargarImage}
+})
+
 ---
 
 <section id="contacto" class="section-padding bg-surface-alt">
@@ -83,14 +95,16 @@ const fotos = import.meta.glob<{ default: ImageMetadata }>(
 
     <div class="grid gap-4 sm:grid-cols-2 sm:gap-6 xl:grid-cols-3">
       {
-        equipo.map((persona) => (
+        miembros.map((persona) => (
           <article class="flex min-h-28 overflow-hidden bg-surface">
             <div class="w-24 shrink-0 bg-surface-alt sm:w-28">
-              <img
-                src={persona.foto ? fotos[`/src/assets/images/equipo/${persona.foto}`]?.default.src ?? "/images/equipo-placeholder.svg" : "/images/equipo-placeholder.svg"}
+              <Image
+                src={persona.cargarImage()}
                 alt=""
                 class="h-full min-h-28 w-full object-cover"
                 loading="lazy"
+                width="200"
+                height="200"
               />
             </div>
             <div class="flex min-w-0 flex-col justify-center p-4 sm:p-5">
