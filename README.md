@@ -1,14 +1,11 @@
-Correccions 10.11.26
+# Grúas del Vallès
 
-Hormipresa
-Covestro
-Prenavisa
-Llerona
-Tecnyconta
-Prefabricats Planes
-Port de Barcelona 
-Marina 92
-Corbion
-Comsa
-Veolia
+Web corporativa para presentar los servicios, la flota y el alquiler de grúas de Grúas del Vallès.
 
+## Desarrollo
+
+El sitio está construido con Astro.
+
+- Iniciar en local: pnpm dev
+- Generar el sitio: pnpm build
+- Previsualizar la compilación: pnpm preview
